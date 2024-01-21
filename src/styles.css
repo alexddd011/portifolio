@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --background:#2B2D43;
+    --color:#FFF;
+    --rosa:#F31656;
+    --gray:#3F3D56;
+}
+
+body{
+    background-color: var(--background);
+    color:var(--color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+ul{
+    list-style: none;
+}
+article.banner{
+    background: url('assets/img/undraw_launch_day_4e04.svg') no-repeat;
+    background-size: 45%;
+    background-position: right center;
+}
+
+@media screen and (max-width: 420px) {
+    
+    .container{
+        width: 400px;
+    }
+    article.banner{
+        background: none;
+    }
+  } 
