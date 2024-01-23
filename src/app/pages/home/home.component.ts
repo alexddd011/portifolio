@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <app-banner/>
+    <!-- <app-banner/> -->
     <app-tecth/>
-    <app-about/>
+    <!-- <app-about/> -->
   `,
   styles: [
   ]

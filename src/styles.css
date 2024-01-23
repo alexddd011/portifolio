@@ -31,6 +31,7 @@ article.banner{
     background: url('assets/img/undraw_launch_day_4e04.svg') no-repeat;
     background-size: 45%;
     background-position: right center;
+   
 }
 
 @media screen and (max-width: 420px) {
