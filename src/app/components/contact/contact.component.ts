@@ -27,8 +27,8 @@ import { Component } from '@angular/core';
         background:var(--gray);
       }
       section{
-       background:url('../../../assets/img/undraw_work_chat_re_qes4.svg') no-repeat;
-        background-size: 45%;
+        background:url('../../../assets/img/undraw_work_chat_re_qes4.svg') no-repeat;
+        background-size: 35%;
         background-position: right center;}
      
       .container form{
