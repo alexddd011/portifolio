@@ -9,6 +9,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from './components/home/about/about.component';
 import { TecthComponent } from './components/home/tecth/tecth.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProjectComponent } from './components/project/project.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { TecthComponent } from './components/home/tecth/tecth.component';
     BannerComponent,
     NavbarComponent,
     AboutComponent,
-    TecthComponent
+    TecthComponent,
+    ContactComponent,
+    ProjectComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

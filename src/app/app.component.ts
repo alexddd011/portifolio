@@ -11,6 +11,10 @@ import { Component } from '@angular/core';
     <main>
       <router-outlet></router-outlet>
     </main>
+
+    <footer class="container">
+      <app-footer/>
+    </footer>
   `,
   styles: [
     

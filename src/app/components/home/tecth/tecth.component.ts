@@ -14,7 +14,12 @@ import { Component, OnInit } from '@angular/core';
         <section class="slideMain" [ngStyle]="{'width': widthSlide, 'margin-left':slideWidth}">
           <div class="cardIcon" *ngFor="let icon of icons">
             <img src="assets/icon/{{icon.img}}" alt="">
-            
+            <div class="content">
+              <h4>{{icon.title}}</h4>
+              <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora rem quibusdam beatae fugit molestiae voluptas
+              </p>
+            </div>
           </div>
         </section>
         
@@ -46,11 +51,33 @@ import { Component, OnInit } from '@angular/core';
         align-items:center;
         padding:20px;
         position:relative;
+        overflow:hidden;
+        border-radius:5px;
       }
       .cardIcon img{
         width:100px;
       }
-      
+      .cardIcon:hover .content{
+        transform: translateY(-100%);
+      }
+      .content{
+        position:absolute;
+        width:100%;
+        height:calc(100% - 10px);
+        top:100%;
+        left:0;
+        background:#00000069;
+        padding:20px 10px;
+        transition: .25s ease-in-out;
+        border-radius:5px;
+      }
+      .content h4{
+        margin-bottom:15px;
+      }
+      .content p{
+        font-size:12px;
+        padding:0 5px;
+      }
      
     `
   ]
@@ -64,23 +91,23 @@ export class TecthComponent implements OnInit{
       img:"angular.svg"
     },
     {
-      title:"Angular",
+      title:"AWS",
       img:"aws.svg"
     },
     {
-      title:"Angular",
+      title:"Banco de dados",
       img:"database-solid.svg"
     },
     {
-      title:"Angular",
+      title:"Java",
       img:"java.svg"
     },
     {
-      title:"Angular",
+      title:"Python",
       img:"python.svg"
     },
     {
-      title:"Angular",
+      title:"Jira",
       img:"jira.svg"
     }]
   qntCard:number = 200 * this.icons.length
